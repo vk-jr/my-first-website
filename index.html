@@ -3,13 +3,28 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>My First Website</title>
+    <!-- AOS Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body>
+    <script>
+        AOS.init();
+      </script>      
+      <h2 data-aos="fade-up">Hello, I Slide Up!</h2>
+      <p data-aos="zoom-in">I will zoom in when you scroll to me.</p>      
     <nav>
         <a href="index.html">Home</a> |
         <a href="about.html">About</a>
     </nav>
+    <h1 id="title">Hello, GSAP!</h1>
+<script>
+  gsap.from("#title", { opacity: 0, y: -50, duration: 1 });
+</script>
+    <h1 class="fade-in">Welcome to My Website</h1>
     <h1>Welcome to My Website!</h1>
+    <button class="button">Hover Me!</button>
     <p id="message">Click the button below to see magic!</p>
     <button onclick="changeText()">Click Me!</button>
     <script src="script.js"></script>
