@@ -51,7 +51,7 @@ Create a `.env` file based on the provided `.env.example` and set the following:
 VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_API_KEY=your_supabase_api_key
 
----  <!-- This is the missing closing backticks -->
+```  
 
 ## 🛠️ Tech Stack
 
@@ -72,3 +72,4 @@ VITE_SUPABASE_API_KEY=your_supabase_api_key
 ```bash
 git clone https://github.com/your-username/resqlink-data-pulse.git
 cd resqlink-data-pulse
+```
